@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+               <!-- -------Looping-------- -->
+
+
+                 <h2>List using JavaScript</h2>
+                 <p id="list1"></p>
+                 <p id="list2"></p>
+
+                    <!-- Using for loop -->
+
+         <script>
+                var mobile = ["Apple","1+","Samsung","Realme","Xiaomi"];
+
+                var len = mobile.length;
+                var text = "<ul>";
+                for (var i=0; i < len; i++)
+                {
+                  text += "<li>" + mobile[i] + "</li>";
+                }
+                text += "</ul>";
+                document.getElementById('list1').innerHTML = text;
+         </script>
+
+                    <!-- Using forEach() -->
+
+         <script>
+
+                var text = "<ul>";
+
+                mobile.forEach(listing);
+                text += "</ul>";
+
+                document.getElementById('list2').innerHTML = text;
+
+                function listing(value)
+                {
+                  text+="<li>" + value + "</li>";
+                }
+
+        </script>
+    </body>
+</html>
