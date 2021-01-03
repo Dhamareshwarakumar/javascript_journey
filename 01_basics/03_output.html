@@ -1,0 +1,79 @@
+<!-- JavaScript can "display" data in different ways:
+
+1. Writing into an HTML element, using innerHTML.
+2. Writing into the HTML output using document.write().
+3. Writing into an alert box, using window.alert().
+4. Writing into the browser console, using console.log(). -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>output</title>
+    <style media="screen">
+        #main-heading
+        {
+            text-align:center;
+        }
+
+        .text
+        {
+            text-align:center;
+            margin-top:25px;
+        }
+
+        #next1
+        {
+            margin:auto;
+            display:block;
+            margin-bottom:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Output Tutorial</h1>
+    <hr width=50%>
+    <p class="text" id="text">Hey Guys How are you all</p>
+    <button type="button" name="next" id="next1" onclick="innerhtml()">Next</button>
+
+    <!-- USING INNERHTML -->
+    <script type="text/javascript">
+    function innerhtml() {
+        document.getElementById("text").innerHTML="Welcome to the World of JavaScript";
+    }
+    </script>
+
+
+  <hr>
+
+    <!-- USING DOCUMNENT.WRITE() -->
+    <script type="text/javascript">
+      document.write("<p class='text'>Hello Folks</p>");
+      // document.write("Is that clear...!");
+    </script>
+
+
+    <!-- USING ALERT -->
+    <script type="text/javascript">
+      // alert("!!! There are no errors in the code :)");
+      // window.alert("!!! There are no errors in the code :)");
+    </script>
+
+
+
+      <!-- USING CONSOLE -->
+      <script type="text/javascript">
+        console.log("This is console,You can see output here");
+
+
+
+      // using tilde(`) opeartor
+      let d=new Date();
+      console.log(`hello All todays date is ${d.getDate()}`);
+    </script>
+
+  </body>
+</html>

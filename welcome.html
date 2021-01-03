@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <center><h1 id="mainheading">Hello Folks Welcome To JavaScript World</h1></center>
+    <hr width="80%">
+
+    <h2 id="head1">What is JavaScript...?</h2>
+    <ul>
+        <li>JavaScript is a popular Programming language</li>
+        <li>Most widely used in Web Development</li>
+    </ul>
+
+    <h2>Why JavaScript...?</h2>
+    <ul>
+        <li>The Second most popular language</li>
+        <li>Majorly used for Web Development</li>
+    </ul>
+
+    <button type="button" onclick="mainheading()">Click here to see what javascript can do</button>
+
+</body>
+<script type="text/javascript">
+
+    var count=0;
+    function mainheading() {
+        if (count%2==0) {
+            document.getElementById("mainheading").innerHTML="How are you all....\\__(\"/)__/";
+        } else {
+            document.getElementById("mainheading").innerHTML="Welcome Folks";
+        }
+        count+=1;
+    }
+
+</script>
+
+
+</html>
