@@ -1,0 +1,2 @@
+I am a sample test file
+serving for the fetch API
