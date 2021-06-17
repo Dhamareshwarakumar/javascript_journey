@@ -9,71 +9,72 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-    <meta charset="utf-8">
-    <title>output</title>
-    <style media="screen">
-        #main-heading
-        {
-            text-align:center;
-        }
-
-        .text
-        {
-            text-align:center;
-            margin-top:25px;
-        }
-
-        #next1
-        {
-            margin:auto;
-            display:block;
-            margin-bottom:20px;
-
-        }
-    </style>
-</head>
-<body>
-    <h1 id="main-heading">Output Tutorial</h1>
-    <hr width=50%>
-    <p class="text" id="text">Hey Guys How are you all</p>
-    <button type="button" name="next" id="next1" onclick="innerhtml()">Next</button>
-
-    <!-- USING INNERHTML -->
-    <script type="text/javascript">
-    function innerhtml() {
-        document.getElementById("text").innerHTML="Welcome to the World of JavaScript";
+  <meta charset="utf-8">
+  <title>output</title>
+  <style media="screen">
+    #main-heading {
+      text-align: center;
     }
-    </script>
+
+    .text {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    #next1 {
+      margin: auto;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="main-heading">Output Tutorial</h1>
+  <hr width=50%>
+  <p class="text" id="text">Hey Guys How are you all</p>
+  <!-- <button type="button" name="next" id="next1" onclick="innerhtml()">Next</button> -->
+
+  <!-- USING INNERHTML -->
+  <script type="text/javascript">
+    function innerhtml() {
+      document.getElementById("text").innerHTML = "Welcome to the World of JavaScript";
+    }
+  </script>
 
 
   <hr>
 
-    <!-- USING DOCUMNENT.WRITE() -->
-    <script type="text/javascript">
-      document.write("<p class='text'>Hello Folks</p>");
-      // document.write("Is that clear...!");
-    </script>
+  <!-- USING DOCUMNENT.WRITE() -->
+  <script type="text/javascript">
+    document.write("<p class='text'>Hello Folks</p>");
+    document.write("Is that clear...!");
+  </script>
 
 
-    <!-- USING ALERT -->
-    <script type="text/javascript">
+  <!-- USING ALERT -->
+  <script type="text/javascript">
       // alert("!!! There are no errors in the code :)");
       // window.alert("!!! There are no errors in the code :)");
-    </script>
+  </script>
 
 
 
-      <!-- USING CONSOLE -->
-      <script type="text/javascript">
-        console.log("This is console,You can see output here");
+  <!-- USING CONSOLE -->
+  <script type="text/javascript">
+    console.log("This is console,You can see output here");
 
 
 
-      // using tilde(`) opeartor
-      let d=new Date();
-      console.log(`hello All todays date is ${d.getDate()}`);
-    </script>
+    // using tilde(`) opeartor
+    let d = new Date();
+    console.log(`hello All todays date is ${d.getDate()} Hope you all are safe`);
+    // console.log('hello All todays date is ' + d.getDate() + ' Hope you all are safe');
+  </script>
 
-  </body>
+</body>
+
 </html>

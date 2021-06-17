@@ -3,11 +3,24 @@
 
 // var represents declaring variables
 // Example
-	var greeting = "Welcome all";
+var greeting = "Welcome all";
 
-	var count = 200;
+var count = 200;
 
-	console.log('greeting');
+console.log('greeting');
+
+
+// let vs var
+// var is function scoped
+console.log(x);
+var x = 5;
+console.log(x);
+
+// let is block scoped
+console.log(y);         // Generates Error
+let y = 5;
+console.log(y);
+
 
 
 // const represents constant values
@@ -15,6 +28,7 @@
 const uid = "user_123";
 
 //try to update the uid value and check the output
+uid = "user_321"        // Generates Error
 
 
 
@@ -22,21 +36,23 @@ const uid = "user_123";
 
 let king = "Dhamareshwar";
 
-if (true)
-{
+if (true) {
     let king = "eshwar";
-    if (true)
-    {
+    if (true) {
         let king = "kumar";
+        console.log(king);
+    }
+    if (true) {
+        let king = "adarsh";
         console.log(king);
     }
 }
 
-if (true)
-{
+if (true) {
     // let king = "Gandikota";
     console.log(king);
 }
+
 
 
 

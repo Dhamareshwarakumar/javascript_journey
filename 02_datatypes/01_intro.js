@@ -13,29 +13,29 @@
 
 
 
-let a=10;                        // Number
-    console.log(`${a} is ${typeof(a)} DataType`)
+let a = 10;                        // Number
+console.log(`${a} is ${typeof (a)} DataType`)
 
 
-let name="Dhamareshwar";        // String
-    console.log(`${name} is ${typeof(name)} DataType`)
+let name = "Dhamareshwar";        // String
+console.log(`${name} is ${typeof (name)} DataType`)
 
 
-let condition= false;           // Boolean
-    console.log(`${condition} is ${typeof(condition)} DataType`)
+let condition = false;           // Boolean
+console.log(`${condition} is ${typeof (condition)} DataType`)
 
 
 let variable;                   // Undefined
-    console.log(`${variable} is ${typeof(variable)} DataType`)
+console.log(`${variable} is ${typeof (variable)} DataType`)
 
 
-let space=null;                 // Null
-    console.log(`${space} is ${typeof(space)} DataType`)
+let space = null;                 // Null
+console.log(`${space} is ${typeof (space)} DataType`)
 
 
-let mobile = ["Apple","1+"];    // Array
-    console.log(`${mobile} is ${typeof(mobile)} DataType`)
+let mobile = ["Apple", "1+"];    // Array
+console.log(`${mobile} is ${typeof (mobile)} DataType`)
 
 
-let age = {'ramu':10, 'suresh':11};                   // object
-    console.log(`${age} is ${typeof(age)} DataType`)
+let age = { 'ramu': 10, 'suresh': 11 };                   // object
+console.log(`${age} is ${typeof (age)} DataType`)

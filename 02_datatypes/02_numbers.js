@@ -1,34 +1,34 @@
-                                        /****************************
-                                                    Numbers
-                                        ****************************/
+/****************************
+            Numbers
+****************************/
 
 
-    /*-----------------------
-          Type conversion
-    ------------------------*/
+/*-----------------------
+      Type conversion
+------------------------*/
 
-    //  number to string
+//  number to string
 
-      var x = (100+43).toString();
-      console.log(typeof(x));
+var x = (100 + 42).toString();
+console.log(typeof (x));
 
-    // String to Numbers
+// String to Numbers
 
-     console.log(Number("143"));
-     console.log(Number(true));
-
-
-
-    /*-------------------------
-          Rounding of digits
-    -------------------------*/
-
-      var wow = 0.143785498;
-      console.log(wow.toFixed(3));
-      console.log(wow.toFixed(0));
+console.log(Number("143"));
+console.log(Number(true));
 
 
-      console.log(Number.MAX_VALUE);
+
+/*-------------------------
+      Rounding of digits
+-------------------------*/
+
+var wow = 0.143785498;
+console.log(wow.toFixed(3));
+console.log(wow.toFixed(0));
+
+
+console.log(Number.MAX_VALUE);
 
 
 /**********CONCLUSIONS**********
