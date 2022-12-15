@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .counterContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .counter {
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            border-radius: 250px;
+            margin: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            font-size: 16px;
+            background-color: #EF4F5F;
+            color: aliceblue;
+            border: 1px solid #EF4F5F;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="counterContainer">
+            <div class="counter">0</div>
+            <div class="buttons">
+                <button class="btn btn-increment">Increment</button>
+                <button class="btn btn-decrement">Decrement</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const counter = document.querySelector('.counter');
+        const btnIncrement = document.querySelector('.btn-increment');
+        const btnDecrement = document.querySelector('.btn-decrement');
+
+        let count = 0;
+
+        btnIncrement.addEventListener('click', () => {
+            count++;
+            counter.textContent = count;
+            document.title = 'Counter ' + count;
+        });
+
+        btnDecrement.addEventListener('click', () => {
+            count--;
+            counter.textContent = count;
+            document.title = 'Counter ' + count;
+        });
+
+        counter.addEventListener('mouseenter', () => {
+            counter.style.backgroundColor = '#EF4F5F';
+            counter.style.color = 'aliceblue';
+            counter.style.border = '1px solid aliceblue';
+        });
+
+        counter.addEventListener('mouseleave', () => {
+            counter.style.backgroundColor = 'aliceblue';
+            counter.style.border = '1px solid black';
+            counter.style.color = '#EF4F5F';
+        });
+    </script>
+</body>
+
+</html>

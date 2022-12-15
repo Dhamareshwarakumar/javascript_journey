@@ -8,8 +8,8 @@
 // 4. Undefined
 // 5. Null
 
-// 6. Array
 // 7. Object
+//      6. Array
 
 
 
